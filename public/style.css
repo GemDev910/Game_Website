@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+a.norm {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 16px;
+    margin-left: -20px;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-image: url('assets/banner.jpg');
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.hoyoverse {
+    background-image: url('assets/honkai-star-rail-logo-removebg-preview.png');
+    width: 220px; 
+    height: 100px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin-top: -18px;  
+    margin-left: 15px;
+    margin-right: 20px;
+    background-position: center center;
+}
+
+nav a.norm {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5px;
+}
+
+nav a.norm::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: lightskyblue;
+    transition: width 0.3s ease-in-out;
+    margin-bottom: 7px;
+}
+
+nav a.norm:hover::after {
+    width: 100%;
+}
+
+.mainpic {
+    width: 100%;
+    height: 95.26vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/Menu.webp');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px 8%;
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+header {
+    overflow-y: hidden;
+}
+
+
+
+a.border {
+    border: 1px solid white;
+    width: fit-content;
+    margin-top: 240px;
+    margin-left: -30px;
+}
+
+a.border:hover {
+    cursor: pointer;
+}
+button.download {
+    width: 180px;
+    height: 50px;
+    background-color: #d1b280;
+    border: none;
+    border-radius: 25px;
+    color: #040404;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    margin-top: 240px;
+    
+}
+
+
+
+div.worldly {
+    background-image: url('assets/Worlds.png');
+    margin-top: 70px;
+    width: 100%; 
+    height: 565px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+div.newss {
+    background-image: url('assets/News.png');
+    margin-top: 70px;
+    width: 100%; 
+    height: 565px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+/* 
+.card {
+    display: flex;
+    margin: 20px auto;
+    background: linear-gradient(to bottom right, #4a90e2, #fa0505, black, white);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.left {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-right: 20px;
+}
+
+.right {
+    padding: 20px;
+    flex: 1;
+}
+
+.character-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.additional-info {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    display: none;
+} */
+
+
+body.characters-page {
+    background-image: url('assets/banner.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+
